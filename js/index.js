@@ -43,7 +43,7 @@ function validateButtons(){
         }
 
         result(value, rand)
-        setTimeout(start, 4000)
+        setTimeout(start, 3000)
     }
     
 }
