@@ -2,10 +2,37 @@ h1{
     text-align: center;
 }
 
+h5{
+	text-align: center;
+}
+
 h1#result{
     color: red;
 }
 
 img.borderRed{
+	margin: 10px;
     border: 2px solid red;
+}
+
+img#x{
+	margin-bottom: 50px;
+}
+
+figure{
+	display: inline;
+}
+
+input{
+	width: 160px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 10px;
+	background-color: red;
+	color: white;
+}
+
+div{
+	text-align: center;
+	margin-bottom: 50px;
 }
