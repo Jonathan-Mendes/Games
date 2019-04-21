@@ -16,7 +16,7 @@ function validateButtons(){
     var btnJogar = document.getElementById('btnJogar')
     var imgPlayer = document.getElementById('player')
     var imgComp = document.getElementById('comp')
-    var end = "../img/"
+    var end = "../imagem/"
     var value = -1
 
     btnPedra.onclick = function(){
