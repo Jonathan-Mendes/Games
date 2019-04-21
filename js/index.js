@@ -1,3 +1,6 @@
+var placarP = 0
+var placarC = 0
+
 start()
 
 function start(){
@@ -67,11 +70,13 @@ function result(value, rand){
 }
 
 function playerWin(){
+    placar(1)
     var result = returnResult()
     result.innerHTML = "Jogador 1 ganhou"
 }
 
 function compWin(){
+    placar(2)
     var result = returnResult()
     result.innerHTML = "Computador ganhou"
 }
@@ -93,4 +98,18 @@ function clear(){
     result.innerHTML = ""
     imgPlayer.src = "../img/neutro.png"
     imgComp.src = "../img/neutro.png"
+}
+
+function placar(index){
+    var placarComp = document.getElementById('placarComp')
+    var placarPlayer = document.getElementById('placarPlayer')
+
+    if(index === 1){
+        placarP = placarP + 1
+        placarPlayer.innerHTML =  placarP
+    }else{
+        placarC = placarC + 1
+        placarComp.innerHTML = placarC
+
+    }
 }
