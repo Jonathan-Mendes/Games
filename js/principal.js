@@ -24,12 +24,11 @@ function queryString(parameter) {
 
 function start(){
     clear()
-    var variavel = queryString("minhaVariavel");
+    var variavel = queryString("variavel");
     if(variavel){
         insertName(variavel)
     }
     validateButtons()
-    // setTimeout(start, 4000)
 }
 
 function insertName(name){
@@ -44,8 +43,6 @@ function validateButtons(){
     var btnJogar = document.getElementById('btnJogar')
     var btnReniciar = document.getElementById('btnReniciar')
     var btnVoltar = document.getElementById('btnVoltar')
-    // var btnIniciar = document.getElementById('btnIniciar')
-    // var namePlayer = document.getElementById('namePlayer')
     var imgPlayer = document.getElementById('player')
     var imgComp = document.getElementById('comp')
     var end = "../img/"
@@ -112,7 +109,7 @@ function result(value, rand){
 function playerWin(){
     placar(1)
     var result = returnResult()
-    var variavel = queryString("minhaVariavel");
+    var variavel = queryString("variavel");
     result.innerHTML = variavel + " ganhou"
 }
 
@@ -151,6 +148,5 @@ function placar(index){
     }else{
         placarC = placarC + 1
         placarComp.innerHTML = placarC
-
     }
 }
