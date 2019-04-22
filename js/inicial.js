@@ -1,9 +1,7 @@
 start()
 
 function start(){
-    // clear()
     validateButtons()
-    // setTimeout(start, 4000)
 }
 
 function validateButtons(){
