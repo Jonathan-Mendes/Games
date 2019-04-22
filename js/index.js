@@ -107,7 +107,8 @@ function result(value, rand){
 function playerWin(){
     placar(1)
     var result = returnResult()
-    result.innerHTML = "Jogador 1 ganhou"
+    var variavel = queryString("minhaVariavel");
+    result.innerHTML = variavel + "ganhou"
 }
 
 function compWin(){
