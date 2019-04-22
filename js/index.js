@@ -42,7 +42,7 @@ function validateButtons(){
     var btnPapel = document.getElementById('btnPapel')
     var btnTesoura = document.getElementById('btnTesoura')
     var btnJogar = document.getElementById('btnJogar')
-    var btnReninciar = document.getElementById('btnReninciar')
+    var btnReniciar = document.getElementById('btnReniciar')
     var btnVoltar = document.getElementById('btnVoltar')
     // var btnIniciar = document.getElementById('btnIniciar')
     // var namePlayer = document.getElementById('namePlayer')
@@ -55,7 +55,7 @@ function validateButtons(){
         window.location = "index.html"
     }
 
-    btnReninciar.onclick = function(){
+    btnReniciar.onclick = function(){
         history.go(0)
     }
 
@@ -113,7 +113,7 @@ function playerWin(){
     placar(1)
     var result = returnResult()
     var variavel = queryString("minhaVariavel");
-    result.innerHTML = variavel + "ganhou"
+    result.innerHTML = variavel + " ganhou"
 }
 
 function compWin(){
