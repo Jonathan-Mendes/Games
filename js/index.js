@@ -43,12 +43,17 @@ function validateButtons(){
     var btnTesoura = document.getElementById('btnTesoura')
     var btnJogar = document.getElementById('btnJogar')
     var btnReninciar = document.getElementById('btnReninciar')
+    var btnVoltar = document.getElementById('btnVoltar')
     // var btnIniciar = document.getElementById('btnIniciar')
     // var namePlayer = document.getElementById('namePlayer')
     var imgPlayer = document.getElementById('player')
     var imgComp = document.getElementById('comp')
     var end = "../img/"
     var value = -1
+
+    btnVoltar.onclick = function(){
+        window.location = "index.html"
+    }
 
     btnReninciar.onclick = function(){
         history.go(0)
