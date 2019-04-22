@@ -3,10 +3,38 @@ var placarC = 0
 
 start()
 
+function queryString(parameter) {  
+    var loc = location.search.substring(1, location.search.length);   
+    var param_value = false;   
+    var params = loc.split("&");   
+    for (i=0; i<params.length;i++) {
+        param_name = params[i].substring(0,params[i].indexOf('='));   
+        if (param_name == parameter) {                                          
+            param_value = params[i].substring(params[i].indexOf('=')+1)   
+        }   
+    }   
+    if (param_value) {  
+        return param_value;   
+    }   
+    else {
+        return undefined;   
+    }   
+}
+
+
 function start(){
     clear()
+    var variavel = queryString("minhaVariavel");
+    if(variavel){
+        insertName(variavel)
+    }
     validateButtons()
     // setTimeout(start, 4000)
+}
+
+function insertName(name){
+    var nameJogador = document.getElementById('nameJogador')
+    nameJogador.innerHTML = name
 }
 
 function validateButtons(){
@@ -14,10 +42,17 @@ function validateButtons(){
     var btnPapel = document.getElementById('btnPapel')
     var btnTesoura = document.getElementById('btnTesoura')
     var btnJogar = document.getElementById('btnJogar')
+    var btnReninciar = document.getElementById('btnReninciar')
+    // var btnIniciar = document.getElementById('btnIniciar')
+    // var namePlayer = document.getElementById('namePlayer')
     var imgPlayer = document.getElementById('player')
     var imgComp = document.getElementById('comp')
-    var end = "../imagem/"
+    var end = "../img/"
     var value = -1
+
+    btnReninciar.onclick = function(){
+        history.go(0)
+    }
 
     btnPedra.onclick = function(){
         imgPlayer.src = end + "pedra.png"

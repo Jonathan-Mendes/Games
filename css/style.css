@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
-h1, h4{
+h1, h4, h3{
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    color: #DF0101
+    color: #DF0101;
 }
 
 h1.placar{
@@ -14,8 +14,8 @@ h1.placar{
 
 h4{
 	display: inline;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 120px;
+	margin-right: 120px;
 }
 
 h5{
@@ -49,4 +49,12 @@ div{
 
 div#semMargin{
 	margin-bottom: 0px;
+}
+
+input{
+	padding: 10px;
+	color: #DF0101;
+	border: 2px solid  #DF0101;
+	width: 300px;
+	margin-top: 20px;
 }
