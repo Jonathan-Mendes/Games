@@ -21,9 +21,15 @@ function queryString(parameter) {
     }   
 }
 
+function tiraEspaco(x) {
+  return x.replace(/%20/g,' ');
+}
+
 function start(){
     clear()
     var variavel = queryString("variavel");
+    variavel = tiraEspaco(variavel)
+    
     if(variavel){
         insertName(variavel)
     }
