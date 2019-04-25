@@ -1,0 +1,49 @@
+body{
+    background-color: #f5f3f2f3;
+}
+
+section, aside{
+    text-align: center;
+    display: block;
+    width: 49%;
+    height: 600px;
+    float: left;
+    /* border: 2px solid #DF0101; */
+    margin: 5px;
+}
+
+a{
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    /* color: #dc3545; */
+    color: #DF0101;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+aside:hover{
+    transition: 0.75s;
+    background-color: #dc3545;
+}
+
+section:hover{
+    transition: 0.75s;
+    background-color: #dc3545;
+}
+
+aside:hover a {
+    color: #f5f3f2f3;
+}
+
+section:hover a {
+    color: #f5f3f2f3;
+}
+
+#esqA{
+    left: 20%;
+}
+
+#dirA{
+    right: 17%;
+}

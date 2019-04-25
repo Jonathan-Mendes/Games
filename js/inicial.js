@@ -11,7 +11,7 @@ function validateButtons(){
     btnIniciar.onclick = function(){
         if(namePlayer.value.trim() != ''){
             var name = namePlayer.value
-            window.location = "game.html?variavel="+name
+            window.location = "jokempo.html?variavel="+name
         }else{
             span.className = span.className.replace('none', '').trim()
         }

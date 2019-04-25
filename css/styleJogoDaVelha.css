@@ -1,0 +1,47 @@
+body{
+	background-color: #dc3545;
+}
+
+img{
+	border: 2px solid black;
+	width: 150px;
+	height: 150px;
+}
+
+div{
+	text-align: center;
+}
+
+div.marginTop{
+	margin-top: 30px;
+}
+
+button{
+	border: 2px solid black;
+	background-color: #f5f3f2f3;
+	padding: 5px;
+	margin: 20px;
+	width: 120px;
+	border-radius: 25px;
+	font-weight: bold;
+}
+
+button:hover{
+	transition: 0.75s;
+	background-color: black;
+	color: #f5f3f2f3;
+}
+
+span{
+	font-size: 50px;
+	color: #f5f3f2f3;
+}
+
+span.namePlayer{
+	margin: 50px;
+	color: black;
+}
+
+h1{
+	color: #f5f3f2f3;
+}

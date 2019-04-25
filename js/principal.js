@@ -47,6 +47,7 @@ function validateButtons(){
     var btnTesoura = document.getElementById('btnTesoura')
     var btnJogar = document.getElementById('btnJogar')
     var btnReniciar = document.getElementById('btnReniciar')
+    var btnMenu = document.getElementById('btnMenu')
     var btnVoltar = document.getElementById('btnVoltar')
     var imgPlayer = document.getElementById('player')
     var imgComp = document.getElementById('comp')
@@ -54,6 +55,10 @@ function validateButtons(){
     var value = -1
 
     btnVoltar.onclick = function(){
+        window.location = "telaInicioJokempo.html"
+    }
+
+    btnMenu.onclick = function(){
         window.location = "index.html"
     }
 
