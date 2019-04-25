@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+
+body.jogoDaVelha{
+	background-color: #dc3545;
+}
+
+body.jokempo{
+	background-color: #f5f3f2f3;
+}
+
+div{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h1, h3{
+	color: #f5f3f2f3;
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+h1#title{
+	margin-bottom: 50px;
+}
+
+button{
+	width: 160px;
+	padding: 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	font-family: 'ZCOOL KuaiLe', cursive;
+	font-size: 15px;
+}
+
+button.btnBlack{
+	border: 2px solid black;
+	background-color: #f5f3f2f3;
+}
+
+button.btnBlack:hover{
+	transition: 0.75s;
+	background-color: black;
+	color: #f5f3f2f3;
+}
+
+input{
+	padding: 10px;
+	color: black;
+	border: 2px solid black;
+	width: 300px;
+	margin-top: 20px;
+	font-family: 'ZCOOL KuaiLe', cursive;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+span.none{
+	display: none;
+}
+
+section{
+	display: block;
+}
+
+aside{
+	display: block;
+}
+
+footer{
+	display: block;
+}
