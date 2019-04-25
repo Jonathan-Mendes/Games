@@ -14,7 +14,7 @@ function validateButtons(){
     btnIniciar.onclick = function(){
         if(namePlayer1.value.trim() != '' && namePlayer2.value.trim() != ''){
             var name = namePlayer1.value + '~' + namePlayer2.value
-            window.location = "jogoDavelha.html?variavel="+name
+            window.location = "jogoDaVelha.html?variavel="+name
         }else{
             span.className = span.className.replace('none', '').trim()
         }
