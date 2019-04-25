@@ -6,14 +6,15 @@ function start(){
 
 function validateButtons(){
     var span = document.getElementById('span')
-    var btnIniciar = document.getElementById('btnIniciar')
     var btnMenu = document.getElementById('btnMenu')
-    var namePlayer = document.getElementById('namePlayer')
+    var btnIniciar = document.getElementById('btnIniciar')
+    var namePlayer1 = document.getElementById('namePlayer1')
+    var namePlayer2 = document.getElementById('namePlayer2')
     
     btnIniciar.onclick = function(){
-        if(namePlayer.value.trim() != ''){
-            var name = namePlayer.value
-            window.location = "jokempo.html?variavel="+name
+        if(namePlayer1.value.trim() != '' && namePlayer2.value.trim() != ''){
+            var name = namePlayer1.value + '~' + namePlayer2.value
+            window.location = "jogoDavelha.html?variavel="+name
         }else{
             span.className = span.className.replace('none', '').trim()
         }

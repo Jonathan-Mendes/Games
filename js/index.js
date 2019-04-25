@@ -21,7 +21,43 @@ fim = true
 
 start()
 
+function queryString(parameter) {  
+    var loc = location.search.substring(1, location.search.length)   
+    var param_value = false  
+    var params = loc.split("&")   
+    for (i=0; i<params.length;i++) {
+        param_name = params[i].substring(0,params[i].indexOf('=')) 
+        if (param_name == parameter) {                                          
+            param_value = params[i].substring(params[i].indexOf('=')+1)
+        }   
+    }   
+    if (param_value) {  
+        return param_value
+    }   
+    else {
+        return undefined
+    }   
+}
+
+function tiraEspaco(x) {
+  return x.replace(/%20/g,' ');
+}
+
+function insertNames(j1, j2){
+	var name1 = document.getElementById('name1')
+	var name2 = document.getElementById('name2')
+
+	name1.innerHTML = j1
+	name2.innerHTML = j2
+}
+
 function start(){
+	var variavel = queryString("variavel");
+	variavel = tiraEspaco(variavel)
+	var jogadores = variavel.split('~')
+	var name1 = jogadores[0]
+	var name2 = jogadores[1]
+	insertNames(name1, name2)
 	play(jogador)
 }
 
@@ -38,9 +74,14 @@ function play(player){
 	var btnVoltar = document.getElementById('btnVoltar')
 	var btnReniciar = document.getElementById('btnReniciar')
 	var btnContinuar = document.getElementById('btnContinuar')
+	var btnMenu = document.getElementById('btnMenu')
+
+	btnMenu.onclick = function(){
+		window.location = "index.html"
+	}
 
 	btnVoltar.onclick = function(){
-		window.location = "index.html"
+		window.location = "telaInicioJogoDaVelha.html"
 	}
 
 	btnContinuar.onclick = function(){

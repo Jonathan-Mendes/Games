@@ -15,7 +15,7 @@ div{
 }
 
 div.marginTop{
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 button{
@@ -36,9 +36,13 @@ button:hover{
 	color: #f5f3f2f3;
 }
 
+button#btnMenu{
+	width: 200px;
+}
+
 span{
 	font-family: 'ZCOOL KuaiLe', cursive;
-	font-size: 50px;
+	font-size: 40px;
 	color: #f5f3f2f3;
 }
 

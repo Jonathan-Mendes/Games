@@ -23,6 +23,7 @@ h1#title{
 }
 
 button{
+	margin: 50px;
 	width: 160px;
 	padding: 10px;
 	border-radius: 25px;
@@ -43,6 +44,7 @@ button.btnBlack:hover{
 }
 
 input{
+	background-color: #f5f3f2f3;
 	padding: 10px;
 	color: black;
 	border: 2px solid black;
@@ -53,18 +55,23 @@ input{
 	font-weight: bold;
 }
 
+span{
+	font-size: 30px;
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
+
 span.none{
 	display: none;
 }
 
-section{
+section, aside{
 	display: block;
-}
-
-aside{
-	display: block;
+	float: left;
+	width: 50%;
 }
 
 footer{
+	margin-top: 250px;
 	display: block;
+	clear: both;
 }

@@ -54,10 +54,6 @@ img.borderRed{
     border: 2px solid #DF0101;
 }
 
-figure{
-	display: inline;
-}
-
 button{
 	font-family: 'ZCOOL KuaiLe', cursive;
 	font-size: 15px;
@@ -102,6 +98,7 @@ div#semMargin{
 }
 
 input{
+	background-color: #f5f3f2f3;
 	padding: 10px;
 	color: #DF0101;
 	border: 2px solid  #DF0101;
@@ -114,4 +111,9 @@ input{
 
 span.none{
 	display: none;
+}
+
+span{
+	font-size: 30px;
+	font-family: 'ZCOOL KuaiLe', cursive;
 }
