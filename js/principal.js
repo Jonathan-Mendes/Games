@@ -51,7 +51,7 @@ function validateButtons() {
     var btnVoltar = document.getElementById('btnVoltar')
     var imgPlayer = document.getElementById('player')
     var imgComp = document.getElementById('comp')
-    var end = "../img/"
+    var end = "./img/"
     var value = -1
 
     btnVoltar.onclick = function () {
